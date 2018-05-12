@@ -1,0 +1,9 @@
+<h3>Films</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let film of films" class="col-1-4">
+    <div class="module">
+      <h4>{{film.title}}</h4>
+      <img src={{film.images.image[0].src}} />
+    </div>
+  </a>
+</div>
